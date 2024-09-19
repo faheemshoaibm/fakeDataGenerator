@@ -13,9 +13,10 @@ class Order:
         self.OrderAmount= ''
     
     def genFakeData(self, fake:Faker, schemaName, customerTableName, customerColumnName, productTableName, productColumnName):
-        self.CustomerId = str(utils.randomLookup(schemaName=schemaName, tableName=customerTableName, columnName=customerColumnName))
-        self.ProductId = str(utils.randomLookup(schemaName=schemaName, tableName=productTableName, columnName=productColumnName))
-        self.OrderTime = str(datetime.now())
+        # self.CustomerId = str(utils.randomLookup(schemaName=schemaName, tableName=customerTableName, columnName=customerColumnName))
+        # self.ProductId = str(utils.randomLookup(schemaName=schemaName, tableName=productTableName, columnName=productColumnName))
+        # self.OrderTime = str(datetime.now())
+        
         self.OrderAmount = str(random.randint(20,1000))
 
 def main():
